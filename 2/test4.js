@@ -7,7 +7,7 @@ module.exports = {
     main2: process.cwd() + '/2/main2.js'
   },
   output: {
-    path: process.cwd() + '/2/dist1',
+    path: process.cwd() + '/2/dist2',
     filename: '[name].js'
   },
   plugins: [
@@ -17,12 +17,18 @@ module.exports = {
       minChunks: 2,
       async: true
     }),
+    new CommonsChunkPlugin({
+      name: "manifest",
+      minChunks: Infinity
+    }),
     new HtmlWebpackPlugin({
       filename: './index1.html',
+      template: './2/index_temp.html',
       chunks: ['main1']
     }),
     new HtmlWebpackPlugin({
       filename: './index2.html',
+      template: './2/index_temp.html',
       chunks: ['main2']
     })
   ]

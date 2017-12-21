@@ -8,7 +8,7 @@
     "cof1": "rimraf 1/dist/ && webpack --config 1/test1.js",
     "cof2": "rimraf 1/dist2/ && webpack --config 1/test2.js",
     "cof3": "rimraf 2/dist1/ && webpack --config 2/test3.js",
-    "cof3": "rimraf 2/dist2/ && webpack --config 2/test4.js"
+    "cof4": "rimraf 2/dist2/ && webpack --config 2/test4.js"
   },
   "keywords": [],
   "author": "",

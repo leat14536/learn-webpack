@@ -1,25 +1,27 @@
 {
-  "name": "webpack_pt",
-  "version": "1.0.0",
-  "description": "",
-  "main": "test.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cof1": "rimraf 1/dist/ && webpack --config 1/test1.js",
-    "cof2": "rimraf 1/dist2/ && webpack --config 1/test2.js",
-    "cof3": "rimraf 2/dist1/ && webpack --config 2/test3.js",
-    "cof4": "rimraf 2/dist2/ && webpack --config 2/test4.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "html-webpack-plugin": "^2.30.1",
-    "rimraf": "^2.6.2",
-    "webpack": "^3.10.0"
-  },
-  "dependencies": {
-    "jquery": "^3.2.1",
-    "vue": "^2.5.13"
-  }
+    "name": "webpack_pt",
+    "version": "1.0.0",
+    "description": "",
+    "main": "test.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "cof1": "rimraf 1/dist/ && webpack --config 1/test1.js",
+        "cof2": "rimraf 1/dist2/ && webpack --config 1/test2.js",
+        "cof3": "rimraf 2/dist1/ && webpack --config 2/test3.js",
+        "cof4": "rimraf 2/dist2/ && webpack --config 2/test4.js",
+        "cof5": "rimraf 4/dist5/ && webpack --config 4/test5.js",
+        "cof5-server": "webpack-dev-server --inline --hot --port 3000 --content-base 4/public --config 4/test5.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "html-webpack-plugin": "^2.30.1",
+        "rimraf": "^2.6.2",
+        "webpack": "^3.10.0"
+    },
+    "dependencies": {
+        "jquery": "^3.2.1",
+        "vue": "^2.5.13"
+    }
 }
